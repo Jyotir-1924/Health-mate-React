@@ -265,6 +265,7 @@ nav {
 }
 .post-detail-para{
     margin-bottom: 1rem;
+    font-size: 18px;
 }
 .page-title {
     text-align: center;
@@ -307,11 +308,15 @@ input, select, textarea {
 .form-container medium{
     margin-top: 1.5rem;
     display: block;
+    text-align: center;
 }
 .form-container a{
     text-decoration: underline;
     font-size: 18px;
     color: rgb(74, 74, 74);
+}
+.link-center{
+    margin: 0 auto;
 }
 
 .author-container{

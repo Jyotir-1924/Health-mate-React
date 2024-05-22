@@ -20,7 +20,9 @@ export default function login() {
                 <p className="form-message">Invalid message !</p>
                 <input type="email" name="emailID" placeholder="Email Id" value={userData.emailID} onChange={changeInputHandle} />
                 <input type="password" name="password" placeholder="Password" value={userData.password} onChange={changeInputHandle} />
+                <Link to={'/'} className="link-center" >
                 <button type="submit" className="btn btn-primary">Log In</button>
+                </Link>
             </form>
             <medium>Don't have an account ? <Link to={'/register'}>Sign Up</Link></medium>
         </div>

@@ -36,7 +36,7 @@ export default function createposts() {
       <div className="container form-container createPost-container">
       <h2>Create Post</h2>
           <form action="" className="form createPost-form">
-              <p className="form-message">Invalid message !</p>
+              {/* <p className="form-message">Invalid message !</p> */}
               <input type="text" name="title" placeholder="Title" value={title} onChange={tag => setTitle(tag.target.value) } autoFocus />
               <select name="category" value={category} id="" onChange={tag => setCartegory(tag.target.value) }>
                 {

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import image2 from '../../src/assets/image2.jpeg'
+import author2 from '../../src/assets/author2.jpeg'
 import { FaRegEdit } from "react-icons/fa";
 import { useState } from 'react';
 import { FaCheckCircle } from "react-icons/fa";
@@ -21,7 +21,7 @@ export default function userProfile() {
         <div className="profile-details">
           <div className="profile-wrapper">
             <div className="profile-image">
-              <img src={image2} alt="" />
+              <img src={author2} alt="" />
             </div>
             <form className="profile-image-form">
               <input type="file" name='profile-image' id='profile-image' accept='png,jpg,jpeg' onChange={tag => setProfileImage(tag.target.files[0])}/>
@@ -32,9 +32,9 @@ export default function userProfile() {
             <FaCheckCircle />
             </button>
           </div>
-          <h2>Jyotiraditya</h2>
+          <h2>Christine P.</h2>
           <form action="" className="form profile-data-form">
-                <p className="form-message">Invalid message !</p>
+                {/* <p className="form-message">Invalid message !</p> */}
                 <input type="text" name="name" placeholder="Full Name" value={name} onChange={tag => setName(tag.target.value)} />
                 <input type="email" name="email" placeholder="Email Id" value={email} onChange={tag => setEmail(tag.target.value)} />
                 <input type="password" name="currPassword" placeholder="Current password" value={currPassword} onChange={tag => setCurrPassword(tag.target.value)} />
